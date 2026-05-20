@@ -1,19 +1,41 @@
-# Full Body Detector Clean Deploy
+# Expert Full Body 3D Skeleton Tracker
 
-This is the cleanest Streamlit Cloud version.
+Cloud-safe expert version.
 
-Files included:
+Upload only:
 - app.py
-- requirements.txt
-- .gitignore
 - README.md
 
-Important:
-Do not upload old files such as:
+Do not upload dependency files:
+- requirements.txt
 - runtime.txt
 - packages.txt
-- old requirements.txt
-- old app.py with cv2 import
+- pyproject.toml
+- setup.py
+- Pipfile
+- environment.yml
 
-Deploy with main file:
-app.py
+## Features
+
+- Browser-based MediaPipe Pose
+- No cv2
+- No OpenCV
+- No Python MediaPipe
+- More precise model settings
+- 960 x 720 camera processing
+- Smoothed landmarks
+- 3D skeleton visualisation
+- 2D and 3D joint-angle estimation
+- Shoulder tilt
+- Hip tilt
+- Body lean
+- Segment measurements
+- Symmetry analysis
+- Visibility/confidence scoring
+- Landmark CSV export
+- Angle/posture CSV export
+
+## Accuracy note
+
+This is a stronger expert prototype, but it is still not true laboratory-grade skeletal tracking.
+A single normal camera cannot perfectly estimate hidden joints, true depth, or real bone lengths.
